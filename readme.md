@@ -5,16 +5,31 @@ Kimi: 📦 1-минутный старт «Python-школа как Vite»
 
 ### ① Установка инструментов (один раз)
 
-```bash
+
 # 1. Ставим pipx (если ещё нет)
+```bash
+
 python -m pip install --user pipx
-pipx ensurepath && exec $SHELL   # перезагружаем shell
+```
+
+```bash
+ 
+ pipx ensurepath && exec $SHELL   # перезагружаем shell
+````
 
 # 2. Cookiecutter + Poetry
+```bash
+ 
 pipx install cookiecutter
+```
+```bash
+ 
 pipx install poetry
+````
 
 # 3. Проверяем
+```bash
+ 
 cookiecutter --version   # ≥ 2.6
 poetry --version         # ≥ 1.8
 ```
@@ -24,6 +39,7 @@ poetry --version         # ≥ 1.8
 ### ② Создаём учебный проект (аналог `npm create vite@latest`)
 
 ```bash
+
 cookiecutter https://github.com/drivendataorg/cookiecutter-data-science \
    --directory python   # если нужен именно чистый Python
 
