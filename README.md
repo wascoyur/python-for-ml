@@ -265,7 +265,7 @@ A project for preparing the skills of working with a Pyighton, followed by maste
 │                         `1.0-jqp-initial-data-exploration`.
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         python_for_ml and configuration for tools like black
+│                         src and configuration for tools like black
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -277,7 +277,7 @@ A project for preparing the skills of working with a Pyighton, followed by maste
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── python_for_ml   <- Source code for use in this project.
+└── src   <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes python_for_ml a Python module
     │
@@ -299,8 +299,8 @@ A project for preparing the skills of working with a Pyighton, followed by maste
 Kimi: <details>
 <summary>📋 Развернутое описание проекта «python-for-ml»</summary>
 
-: # ()
- # (```text)
+[//]: # ()
+[//]: # (```text)
 
 [//]: # (A project for preparing the skills of working with Python, followed by mastering the specialty of a ML-engineer)
 
@@ -319,7 +319,7 @@ Kimi: <details>
 | ✅ **Poetry** | фиксированные версии пакетов (lock-файл) |
 | ✅ **Pre-commit** | black, ruff, mypy перед каждым коммитом |
 | ✅ **Jupyter** | ноутбуки без конфликтов зависимостей |
-| ✅ **Все 6 книг** | файлы кода и тесты кладём в `python_for_ml/`, ноутбуки — в `notebooks/`
+| ✅ **Все 6 книг** | файлы кода и тесты кладём в `src/`, ноутбуки — в `notebooks/`
 
 ---
 
@@ -361,7 +361,7 @@ ccds
 <summary>3. Установить зависимости</summary>
 
 ```bash
-cd python-for-ml
+cd src
 poetry install          # ставит black, ruff, pytest, jupyter
 poetry env info         # покажет путь к venv
 pre-commit install      # хуки перед коммитом
@@ -380,7 +380,7 @@ pre-commit install      # хуки перед коммитом
 |---|---|---|
 | **Start** | `poetry shell` | активируем venv |
 | **Новая тема** | `git checkout -b week-1-syntax` | ветка |
-| **Код** | `python_for_ml/day01.py`, `tests/test_day01.py` | TDD |
+| **Код** | `src/day01.py`, `tests/test_day01.py` | TDD |
 | **Линтеры** | `pre-commit run --all-files` | black, ruff, mypy |
 | **Тесты** | `pytest` | 90 % покрытие |
 | **Git push** | `git push origin week-1-syntax` | CI прогоняется |
@@ -394,9 +394,9 @@ pre-commit install      # хуки перед коммитом
 
 | Ресурс | Куда | Пример файла |
 |---|---|---|
-| «Python на примерах» | `python_for_ml/basics.py` | `def leap_year(year)` |
-| «Изучаем Python» | `python_for_ml/collections.py` | `class MyList` |
-| «Паттерны разработки» | `python_for_ml/repository.py` | `class CSVRepository` |
+| «Python на примерах» | `src/basics.py` | `def leap_year(year)` |
+| «Изучаем Python» | `src/collections.py` | `class MyList` |
+| «Паттерны разработки» | `src/repository.py` | `class CSVRepository` |
 | «fastai» | `notebooks/01_fastai_intro.ipynb` | `from fastai.vision.all import *` |
 | «Программирование для нормальных» | `notebooks/02_numpy_matplotlib.ipynb` | `import numpy as np` |
 | «Начинаем программировать» | `tests/test_basics.py` | `def test_leap_year()` |
