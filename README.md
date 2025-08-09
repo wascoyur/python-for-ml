@@ -101,7 +101,7 @@ pre-commit install                # линтеры перед каждым ко�
 ### ⑤ Полезные алиасы (добавьте в `~/.bashrc`)
 
 ```bash
-alias py="poetry shell"
+alias py="poetry env activate"
 alias lint="pre-commit run --all-files"
 alias test="pytest -q"
 alias nb="poetry run jupyter lab"
@@ -244,8 +244,9 @@ pytest                # тесты зелёные
 A project for preparing the skills of working with a Pyighton, followed by mastering the specialty of a ml-engineer
 
 ## Project Organization
+  <details>
+<summary>Show detailed structure</summary>
 
-```
 ├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
@@ -292,18 +293,21 @@ A project for preparing the skills of working with a Pyighton, followed by maste
     │   └── train.py            <- Code to train models
     │
     └── plots.py                <- Code to create visualizations
-```
+</details>
 
---------
-```
+
 Kimi: <details>
 <summary>📋 Развернутое описание проекта «python-for-ml»</summary>
 
-```text
-A project for preparing the skills of working with Python, followed by mastering the specialty of a ML-engineer
-```
+: # ()
+ # (```text)
 
-</details>
+[//]: # (A project for preparing the skills of working with Python, followed by mastering the specialty of a ML-engineer)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (</details>)
 
 ---
 
