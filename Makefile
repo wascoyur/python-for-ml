@@ -2,7 +2,7 @@
 # GLOBALS                                                                       #
 #################################################################################
 
-PROJECT_NAME = first-python-for-lm-engeneer
+PROJECT_NAME = python-for-ml
 PYTHON_VERSION = 3.10
 PYTHON_INTERPRETER = python
 
@@ -65,7 +65,7 @@ create_environment:
 ## Make dataset
 .PHONY: data
 data: requirements
-	$(PYTHON_INTERPRETER) first_python_for_lm_engeneer/dataset.py
+	$(PYTHON_INTERPRETER) python_for_ml/dataset.py
 
 
 #################################################################################

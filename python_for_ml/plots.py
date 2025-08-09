@@ -4,7 +4,7 @@ from loguru import logger
 from tqdm import tqdm
 import typer
 
-from first_python_for_lm_engeneer.config import FIGURES_DIR, PROCESSED_DATA_DIR
+from python_for_ml.config import FIGURES_DIR, PROCESSED_DATA_DIR
 
 app = typer.Typer()
 
