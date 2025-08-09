@@ -40,8 +40,14 @@ poetry --version         # ≥ 1.8
 
 ```bash
 
-cookiecutter https://github.com/drivendataorg/cookiecutter-data-science \
-   --directory python   # если нужен именно чистый Python
+pipx install cookiecutter-data-science
+ #  --directory python   # если нужен именно чистый Python
+ ````
+
+```bash
+  
+ccds
+#стартуем новый проект
 
 # Отвечаем на 4 вопроса:
 # project_name: ml-bootcamp
