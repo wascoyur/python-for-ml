@@ -3,7 +3,7 @@
 #################################################################################
 
 PROJECT_NAME = python-for-ml
-PYTHON_VERSION = 3.10
+PYTHON_VERSION = 3.13
 PYTHON_INTERPRETER = python
 
 #################################################################################
@@ -15,7 +15,7 @@ PYTHON_INTERPRETER = python
 .PHONY: requirements
 requirements:
 	poetry install
-	
+
 
 
 
