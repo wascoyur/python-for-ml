@@ -3,7 +3,7 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [project]
-name = "python_for_ml"
+name = "src"
 version = "0.0.1"
 description = "A project for preparing the skills of working with a Pyighton, followed by mastering the specialty of a ml-engineer"
 authors = [
@@ -37,16 +37,15 @@ requires-python = ">=3.10.0"
 
 [tool.ruff]
 line-length = 99
-src = ["python_for_ml"]
-include = ["pyproject.toml", "python_for_ml/**/*.py"]
+src = ["src"]
+include = ["pyproject.toml", "src/**/*.py"]
 
 [tool.ruff.lint]
 extend-select = ["I"]  # Add import sorting
 
 [tool.ruff.lint.isort]
-known-first-party = ["python_for_ml"]
+known-first-party = ["src"]
 force-sort-within-sections = true
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.2.0"
-

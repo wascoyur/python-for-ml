@@ -9,3 +9,9 @@ repos:
       rev: 22.10.0
       hooks:
         -   id: black
+
+  -   repo: https://github.com/charliermarsh/ruff-pre-commit
+      rev: v0.0.265  # Use the most recent tag
+      hooks:
+        - id: ruff
+          args: ["--fix", "--src", "src"]
